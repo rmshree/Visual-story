@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SacBee</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/098db306f1.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+	 <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/thunder.css">
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	
+	</head>
+
+	<body data-spy="scroll" data-target=".navbar" data-offset="80">
+      <div class="navbar navbar-default navbar-fixed-top sticky" id="navbar-animate">
+         <div class="container">
+            <a href="index.html" class="navbar-brand"><p style="margin-top: 1px; font-size: 33px; margin-left: -13px;">The Sacramento Bee</p><img src = "bee1.png" height="80px" width="86px" style="margin-top: -59px; margin-left: 294px;"></a>
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <ul class="sac-social">
+            		<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="icon-twitter"></i></a></li>
+					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="#"><i class="icon-instagram"></i></a></li>
+				    </ul>
+            <div class="collapse navbar-collapse navHeaderCollapse">
+               <ul class="nav navbar-nav navbar-right" style="margin-top: -23px;">
+               	  <li><a href="#MyFeed"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+               	  <li class="dropdown hidden-xs" id="drop_down2">
+                        <a class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                        <div class="dropdown-content" id="drop_content2">
+                            <a href="#/local">Local</a>
+                            <a href="#/sports">Sports</a>
+                            <a href="#/politics">Politics</a>
+                            <a href="#/Investigations">Investigations</a>
+                            <a href="#/Opinion">Politics</a>
+                            <a href="#/California">California</a>
+                        </div>
+                    </li>
+                  <li><a href="#News">News</a></li>
+                  <li><a href="#Sports">Sports</a></li>
+                  <li><a href="#Money">Money</a></li>
+                  <li><a href="#Entertainment">Entertainment</a></li>
+                  <li><a href="index.html" class="active" style="border-bottom:1px solid black"><b>Tech</b></a></li>
+                  <li><a href="#Classifieds">Classifieds</a></li>
+               </ul>
+            </div>
+            <!-- collapse -->
+         </div>
+         <!--container-->
+      </div>
+  <article>
+    <div class="content-jumbotron swiper-container swiper-intro">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide">
+          	<p>
+              <span class="animated fadeInUp"><b>September 6:</b> Hurricane Irma, a Category 5 storm</span> 
+    					<span class="animated fadeInUp">with winds up to 185 mph, made landfall in the Caribbean.</span>
+    				</p>
+		      </div>
+          <div class="swiper-slide">
+           <p>
+             <span class="animated fadeInUp">The storm made its first Florida landfall in </span>
+  					 <span class="animated fadeInUp">the Keys on the morning of September 10th.</span>
+  				 </p>
+	    	  </div>
+          <div class="swiper-slide">
+           <p>
+             <span class="animated fadeInUp">Nearly<b> 7 million</b> people in the Southeast 
+  					 were warned to evacuate, including 6.4 million in Florida alone.</span>
+			     </p>
+			    </div>
+          <div class="swiper-slide">
+           	<p>
+          		<span class="animated fadeInUp">Their stories provide a glimpse into the extent of Irma's wrath:<span>
+          	</p>
+          </div>
+          <div class="swiper-slide rain">
+            <div class="rain">
+                <canvas id="canvas1"></canvas>
+                <canvas id="canvas2"></canvas>
+                <canvas id="canvas3"></canvas> 
+              </div>    
+            <p><span><b>Gwen Bush.</b> Watched as the water rose around her home.  She grabs a hurricane kit she'd packed, pushes open the door, and wades through thigh-deep water. The rescuers take her to a shelter a few miles away.<br>
+            Day brakes and she's grateful to be alive. But she has nothing to go back to.<br>
+            Bush, 50, is as a security guard at a sports and music venue in Orlando. Gets paid when she works. Concerts and shows were canceled in the days leading up to the storm. Now it will be weeks until she can get back to work.</span></p> 
+              
+			    </div>
+          <div class="swiper-slide rain" style="background-image:url(https://m.popkey.co/d162d8/1xDV0.gif)">
+            <p style="color:black"><span><b>Robert Hickok</b>. 51-year-old commercial fisherman, spends hours stranded in his truck on a bridge. Fast-rising waters threaten him as he tries to leave Plantation Island.
+            He waits the flood out, hoping to stay alive. At daybreak, the water begins to recede and he is able to drive off the island.</span><br>
+            <span> He returns to his home around midday. Completely destroyed.<br>
+            "It's all gone. It's a total loss. The trailer, boat, car, everything."</span></p>   
+          </div>
+          <div class="swiper-slide rain" style="background-image:url(https://media.giphy.com/media/Kr34KZjfRrYSA/giphy.gif)">
+            <p><span><b>Darin Van Gundy</b>. Wakes up at 6:30 a.m. to find water creeping up to his door. Worried, wades through the streets to check on friends. He returns in a few hours. Bottom floor of his two-story apartment is floating in 4 ft of water.
+            Water was 4 ft deep in the three blocks of houses and apartments leading to the river. <br>
+            "We lost some art we never imagined we could lose because we brought it up 4 feet, and it crested at 5 feet in spots."</span></p>
+          </div>
+          <div class="swiper-slide" style="background-image:url(https://media1.giphy.com/media/oRvXLMvotsIzC/giphy.gif)">
+            <p><span><b>Larry Dimas and his wife, Elida Dimas</b>. Live in inland Florida town about 40 miles off Naples where entire areas were flooded.<br>
+            The Dimases lost part of the roof of their mobile home to Irma, and one wall wobbled to the touch.
+            Larry says damage from Irma won't be easy to overcome in a town whose population is composed mainly of migrants and blue-collar workers.<br>
+            Dimas says it's still OK to live in his mobile home, but his wife disagrees.
+            <br>"He wants to, but I'm not living here."</span></p>
+            <a id="begin-button" href="#full-article"><div>Click to continue to Full Article <i class="fa fa-angle-double-down animated infinite fadeOutDown"></i></div></a>
+          </div>
+            <div id="continue-button"> Scroll down <i class="fa fa-angle-double-down fa-lg animated infinite fadeOutDown"></i></div> 
+            
+      </div> <!-- swiper-wrapper --> 
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div> <!-- swiper-container -->   
+     <!-- Swiper JS -->
+    <script src="js/swiper.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        direction: 'vertical',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        mousewheelControl: true,
+        keyboardControl:true
+    });
+    </script>
+   </article>
+<div id="full-article" >
+  <section>
+    <br><br>
+    <h1>Irma's life and demise: 2 weeks of destruction and fear</h1>
+
+    <h3><i class="fa fa-newspaper-o" aria-hidden="true"></i> &nbsp;&nbsp;BY SETH BORENSTEIN</h3>
+    <h4>AP Science Writer</h4>
+    <p>
+    <b>WASHINGTON </b>- Irma, which flattened some Caribbean islands and enveloped nearly all of Florida in its fury, 
+    no longer exists. The open Atlantic's most powerful hurricane on record finally sputtered out as an ordinary 
+    rainstorm over Ohio and Indiana.
+
+    Irma's confirmed death toll is 61 and still rising, 38 in the Caribbean and 23 in the United States. In the U.S. alone, 
+    nearly 7 million people were told to evacuate, and 13 million Floridians were left without power in hot steamy 
+    weather. <br><br>
+
+    This storm grew so immensely powerful over warmer-than-normal Atlantic water that it devastated the first 
+    islands in its path. Its gargantuan size — two Hurricane Andrews could fit inside it — spread so much fear that 
+    people all over the Florida peninsula upended their lives to flee.
+
+    "This was a large, extremely dangerous catastrophic hurricane," National Hurricane Center spokesman and 
+    meteorologist Dennis Feltgen said Wednesday, when he declared the storm over.
+
+    Colorado State University hurricane researcher Phil Klotzbach put it simpler: "Irma was a beast." Irma generated
+     as much accumulated energy in a dozen days as an entire six-month hurricane season would in an average year,
+    Klotzbach calculated. <br><br>
+
+    Just 30 hours after it became a tropical storm on Aug. 30, Irma was a major Category 3 hurricane. By Sept. 4 it 
+    had intensified into a Category 4, with 130 mph (210 kph) winds, and it wasn't near done.<br>
+
+    It became a Category 5 storm the next day with top winds of 185 mph (nearly 300 kph), the highest ever recorded
+    in the open Atlantic. Only one storm whirled faster — Hurricane Allen reached 190 mph (305 kph) in 1980 over
+    the normally warm Gulf of Mexico — but Irma held its ferociously high speeds for 37 hours, a new global record 
+    for tropical cyclones. It beat Typhoon Haiyan, which also reached 185 mph (nearly 300 kph) before killing more
+    than 6,000 people in the Philippines. Irma ultimately spent 78 hours as a Category 5, the longest in 85 years for 
+    Atlantic hurricanes.<br><br>
+
+    Irma's entire path, from its birth off Africa to its death over the Ohio Valley, stayed within the cone of the probable
+    track forecast by the National Hurricane Center.
+
+    Irma claimed its first victim when it was still far off, sending a "monster wave" to drown a teen-aged surfer in 
+    Barbados. Then it hit the Leeward Islands in full fury, sweeping a 2-year-old boy to his death after tearing the roof
+    from his home.
+
+    Irma bullied through much of the Caribbean — Antigua, St. Martin, St. Barts, Anguilla, the U.S. and British Virgin
+    Islands, Turks and Caicos, the Bahamas. It narrowly skirted Puerto Rico, Haiti and the Dominican Republic. 
+    It turned lush tropical playgrounds into blasted-out landscapes, littered with splintered lumber, crumpled sheet 
+    metal and shattered lives. In St. Martin, 15 people were killed.<br><br>
+
+    Irma was still a Category 5 when it raked Cuba's coast, the first hurricane that size to hit the storm-prone island 
+    since 1924. At least 10 people died there, despite massive evacuations. And by moving briefly over land, it may 
+    have spared Florida a tougher punch.
+
+    More importantly, the system slowed, delaying its turn north and steering its center over Florida's west coast, 
+    which is less populated and less densely developed than the east. It also allowed dry air and high winds from the 
+    southwest to flow into Irma, taking a bite out of the storm and even tearing the southwest eyewall apart for a while.
+
+    <br>Irma was more vulnerable, but by no means weak. A Category 4 storm with 130 (210 kph) winds when it slammed
+     into Cudjoe Key, it tied for history's seventh strongest hurricane to make U.S. landfall, based on its central pressure. 
+    With Harvey's swamping of Texas, this is the first year two Category 4 storms hit the United States.
+
+    The Keys were devastated. Federal officials estimated that a quarter of the homes were destroyed, and hardly any
+    escaped damage. Roofs seemed peeled off by can-openers; power poles were nowhere to be seen.
+
+    Irma was back over water as it closed in on mainland Florida, weakening still but spreading much wider — to
+    more than 400 miles (640 kilometers) in girth — whipping the entire peninsula with winds of 39 mph (62 kph) 
+    or more. It pushed its highest storm surge, 10 feet (more than 3 meters), onto Florida's southwestern coast, while 
+    causing some of its worst flooding in northeast Florida, Georgia and South Carolina, far from Irma's center.<br><br>
+
+    Irma's second U.S. landfall was on Marco Island, near where Wilma hit in 2005. By then, Irma was a still-major 
+    Category 3, with 115 mph (185 kph) winds, but weakening fast. The worst of its fury somehow missed the 
+    Tampa Bay area, where homes were not nearly as flooded as those in faraway Jacksonville. Irma then sloshed 
+    through Georgia and Alabama as a tropical storm, blowing down tall trees and power lines, before dissipating 
+    Tuesday over Tennessee and Ohio.<br></p>
+    </section>
+
+     <p style="text-align:left;"><u>Adapted from</u>: <a href="http://www.sacbee.com/news/nation-world/article173154731.html">http://www.sacbee.com/news/nation-world/article173154731.html</a> and <a href="http://www.sacbee.com/news/nation-world/article172626086.html.">http://www.sacbee.com/news/nation-world/article172626086.html</a></p><br><br>
+    <img src="c2.jpg" style="margin-left:90px">
+
+   </div>
+  
+<!--footer start from here-->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-sm-6 paddingtop-bottom">
+        <h6 class="heading7">SUBSCRIPTIONS</h6>
+        <ul class="footer-ul">
+          <li><a href="#"> Career</a></li>
+          <li><a href="#"> Privacy Policy</a></li>
+          <li><a href="#"> Terms & Conditions</a></li>
+          <li><a href="#"> Client Gateway</a></li>
+          <li><a href="#"> Ranking</a></li>
+          <li><a href="#"> Case Studies</a></li>
+          <li><a href="#"> Frequently Ask Questions</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2 col-sm-6 paddingtop-bottom">
+        <h6 class="heading7">SITE INFO</h6>
+        <ul class="footer-ul">
+          <li><a href="#"> Career</a></li>
+          <li><a href="#"> Privacy Policy</a></li>
+          <li><a href="#"> Terms & Conditions</a></li>
+          <li><a href="#"> Client Gateway</a></li>
+          <li><a href="#"> Ranking</a></li>
+          <li><a href="#"> Case Studies</a></li>
+          <li><a href="#"> Frequently Ask Questions</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6 paddingtop-bottom">
+        <h6 class="heading7">ADVERTISING</h6>
+        <ul class="footer-ul">
+          <li><a href="#"> Career</a></li>
+          <li><a href="#"> Privacy Policy</a></li>
+          <li><a href="#"> Terms & Conditions</a></li>
+          <li><a href="#"> Client Gateway</a></li>
+          <li><a href="#"> Ranking</a></li>
+          <li><a href="#"> Case Studies</a></li>
+          <li><a href="#"> Frequently Ask Questions</a></li>
+        </ul>
+      </div>
+      <div class="col-md-5 col-sm-6">
+        <div class="bottom-right">
+				<div data-tockify-component="mini" data-tockify-calendar="mahashree.rajendran"></div>
+				<script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
+			</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="copyright">
+  <div class="container-fluid">
+    <div class="col-md-6">
+      <p>© 2017 - Designed by Mahashree</p>
+    </div>
+    <div class="col-md-6">
+      <ul class="bottom_ul">
+        
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Faq's</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Site Map</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+			<div class="clearfix visible-xs-block"></div>
+			<div class="clearfix visible-lg-block visible-md-block visible-sm-block visible-xs-block"></div>
+			<div class="clearfix visible-xs-block"></div>
+			<div class="clearfix visible-xs-block"></div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+  <!-- Rain animation -->
+  <script src="js/thunder.js"></script>
+
+
+	</body>
+</html>
